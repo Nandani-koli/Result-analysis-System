@@ -8,7 +8,7 @@ $pass = $_POST['pass'];
 $uname = mysql_real_escape_string($uname);
 $pass = mysql_real_escape_string($pass);
 //connect database
-$conn= mysql_connect("localhost","root","nandu2002");
+$conn= mysql_connect("localhost","root"," ");
 mysql_select_db("resultanalysis");
 //query the database for user
 $result = mysql_query("select * from admin where username = '$uname' and password ='$pass'")
