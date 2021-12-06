@@ -10,7 +10,7 @@ session_start();
 $fname = mysql_real_escape_string($fname);
 $password = mysql_real_escape_string($password);
 //connect database
-$conn= mysql_connect("localhost","root","nandu2002");
+$conn= mysql_connect("localhost","root","");
 mysql_select_db("resultanalysis");
 //query the database for user
 $result = mysql_query("select * from faculty where fname = '$fname' and password ='$password'")
