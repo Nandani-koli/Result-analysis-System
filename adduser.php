@@ -8,7 +8,7 @@
  $email =$_POST['email'];
  $password = $_POST['password'];
 
- $mycon=mysql_connect('localhost','root','nandu2002');
+ $mycon=mysql_connect('localhost','root','');
 $mydb=mysql_select_db("resultanalysis");
 $exe=mysql_query("insert into faculty(fname,email,password)
 	values('$fname','$email','$password')");
